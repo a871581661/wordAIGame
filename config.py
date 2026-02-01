@@ -183,33 +183,3 @@ GUI_IMAGE_HEIGHT = 350  # 图片显示区域高度
 GUI_FONT_FAMILY = "Microsoft YaHei"  # 字体
 GUI_FONT_SIZE = 11  # 字体大小
 
-# ============== 直播互动配置 ==============
-# B站直播房间号
-BILIBILI_ROOM_ID = int(os.getenv("BILIBILI_ROOM_ID", "0"))  # 设置为你的B站房间号
-
-# 抖音直播房间号
-DOUYIN_ROOM_ID = os.getenv("DOUYIN_ROOM_ID", "")  # 设置为你的抖音房间号
-
-# 投票设置
-LIVE_VOTE_DURATION = 15  # 投票时长（秒）
-
-# 弹幕投票关键词
-VOTE_KEYWORDS = {
-    "1": ["1", "选1", "选择1", "1号"],
-    "2": ["2", "选2", "选择2", "2号"],
-    "3": ["3", "选3", "选择3", "3号"],
-    "4": ["4", "选4", "选择4", "4号"],
-}
-
-# 礼物效果阈值（元）
-GIFT_THRESHOLDS = {
-    "cultivation_small": 0.1,   # 小额修为加成
-    "cultivation_medium": 1.0,  # 中额修为加成
-    "cultivation_large": 10.0,  # 大额修为加成
-    "attribute_boost": 20.0,    # 属性加成
-    "rename": 50.0,             # 改名权
-    "resurrection": 200.0,      # 复活权
-}
-
-# 礼物效果倍率
-GIFT_CULTIVATION_MULTIPLIER = 10  # 每1元 = 10点修为
